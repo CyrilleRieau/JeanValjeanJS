@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=<1.0>">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TestTest</title>
+</head>
+
+<body>
+    <form>
+        <button type="button" id="bouton">Click</button>;
+        <button type="button" id="bouton2">ClickTO</button>;
+    </form>
+    <script>
+        let button = document.querySelector("#bouton");
+        let bouton = document.querySelector("#bouton2");
+
+        function test() {
+            console.log("bloup");
+        };
+        button.addEventListener('click', test());
+
+        bouton.addEventListener('click', test);
+    </script>
+</body>
+
+</html>
