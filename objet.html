@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FicheIdentite</title>
+</head>
+
+<body>
+    <script>
+        let ficheIdentite = {
+            name: 'Rieau',
+            firstname: 'Cyrille',
+            genre: 'Masculin',
+            celibataire: true,
+            region: 'Auvergne Rhône-Alpes',
+            adresse: {
+                region: 'Auvergne Rhône-Alpes',
+                pays: 'France',
+                rue: 'Bloup',
+                ville: 'Villeurbanne'
+            },
+            animal: [
+                chien = 'Poppy',
+                chien = 'Ernesto',
+                chat = 'Andres'
+            ],
+            coucou: function() {
+                alert("Hello !");
+            },
+            age: 32
+        };
+        console.log(ficheIdentite.region);
+        console.log(ficheIdentite['region']);
+        //let variable='region';
+        //ficheIdentite[variable];
+        /*autre méthode de création objet : let fI ={};
+        fI.name: 'Rieau';
+            fI.firstname: 'Cyrille';
+            fI.genre: 'Masculin';
+            fI.region: 'Auvergne Rhône-Alpes';
+            fI.celibataire : true;
+            fI.age: 32; 
+            */
+        ficheIdentite.adresse.rue = 'Padampchi';
+        ficheIdentite.region = 'autre';
+        ficheIdentite.etude = 'aucune';
+        console.log(ficheIdentite.adresse.rue);
+        console.log(ficheIdentite['adresse']['pays']);
+        console.log(ficheIdentite.animal[1]);
+        ficheIdentite.coucou();
+    </script>
+</body>
+
+</html>
