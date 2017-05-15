@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="pulse.css">
+    <title>Pulse</title>
+</head>
+
+<body>
+    <form action=''>
+        <input type='text' name='data' id='data'>
+        <button type='button' id='button'>Click</button>
+    </form>
+    <script>
+        /*let data = document.querySelector('#data');
+                                let button = document.querySelector('#button');
+                                button.addEventListener('click', function(e) {
+                                e.preventDefault();
+                                if (data.value === '') {
+                                button.classList.add('pulsationVide');
+                                } else {
+                                button.classList.add('pulsationPlein');
+                                }
+                                });*/
+        let button = document.querySelector('#button');
+        let classes = button.className; //sauvegarde de l'etat de la balise class du bouton au début du script
+        //eventListener qui se déclenche à la fin des animations et qui remet la classe du bouton à son état initial 
+        button.addEventListener('animationend', function() {
+            button.className = classes;
+            //Ajout d'une classe en fonction de la présence de donnees ou non dans le input
+
+            button.addEventListener('click', function() {
+                let input = document.querySelector('#data');
+                if (input.value === '') {
+                    button.classList.add('pulseRed');
+                } else {
+                    button.classList.add('pulseGreen');
+                }
+
+                //button.style.animation = 'toRed 0.1s';
+                /*setTimeOut(function() {
+                    btn.classList.remove('pulseRed');
+                }, 1000)*/
+
+            });
+        });
+    </script>
+</body>
+
+</html>
