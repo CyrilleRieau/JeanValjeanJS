@@ -13,8 +13,7 @@
     <script>
         let a = parseInt(prompt("Combien font 2 + 2 ?"));
         while (a != 4) {
-            let section = document.querySelector("section");
-            section.innerHTML = "La réponse donnée " + a + " , est fausse.";
+            alert("La réponse donnée " + a + " , est fausse.");
             a = parseInt(prompt("Non. Combien font 2 + 2 ?"));
         };
         if (a == 4) {
