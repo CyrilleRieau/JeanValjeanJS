@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TP ForEach</title>
+</head>
+
+<body>
+    <input type="text" id='clef'>
+    <input type="text" id='valeur'>
+    <button type='button' id='button'>Click</button>
+
+    <script>
+        /*let obj = {};
+                                    let clef = document.querySelector('#clef');
+                                   let button = document.querySelector('#button');
+                                  let value = document.querySelector('#valeur');
+                                    button.addEventListener('click', function(e) {
+                                          obj.value = document.querySelector('#clef').value + ' : ' + document.querySelector('#valeur').value;
+                                   console.log(obj)
+                                      });*/
+        let objet = {};
+        let button = document.querySelector('#button');
+        button.addEventListener('click', function() {
+            let clef = document.querySelector('#clef');
+            let value = document.querySelector('#valeur');
+            objet[clef.value] = valeur.value;
+            console.log(objet);
+            /*if (clef.value == true) {
+                objet[clef.value] += [valeur.value];
+            };*/
+            //Partie 2 avec rajout de valeur séparées par virgule, si valeur clef existe déjà
+            if (objet.hasOwnProperty(clef.value)) {
+                objet[clef.value] += ', ' + valeur.value;
+            } else {
+                objet[clef.value] = valeur.value;
+            }
+            //partie 3 avec ajout dans un tableau des différentes valeurs
+
+        });
+    </script>
+
+</body>
+
+</html>
