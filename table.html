@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tables</title>
+</head>
+<body>
+    <script>
+        let table1 = {
+            numero : 1,
+            nombre : 5,
+            apprenant : [ 
+                personne1 = {
+                    nom : 'DOS',
+                    prenom : 'dfgq'
+                },
+                personne2 = {
+                    nom : 'gdfs',
+                    prenom : 'fghs'
+                },
+                personne3 = {
+                    nom : 'AZEd',
+                    prenom : 'xgfhs'
+                },
+                personne4 = {
+                    nom : 'QSdq',
+                    prenom : 'Cvkdo'
+                },
+                personne5 = {
+                    nom : 'Moez',
+                    prenom : 'FGq'
+                }
+            ]
+        };
+        let table2 = {
+            numero : 2,
+            nombre : 6,
+            apprenant : [
+            personne1 = {
+                    nom : 'AZedcg',
+                    prenom : 'ghjdf'
+                },
+                personne2 = {
+                    nom : 'mol',
+                    prenom : 'sfgdhs'
+                },
+                personne3 = {
+                    nom : 'FHJxw',
+                    prenom : 'wsdf'
+                },
+                personne4 = {
+                    nom : 'QSDad',
+                    prenom : 'lmo'
+                },
+                personne5 = {
+                    nom : 'zers',
+                    prenom : 'AZesx'
+                },
+                personne6 = {
+                    nom : 'Pold',
+                    prenom : 'erd'
+                }
+            ]
+           
+        };
+        let table3 = {
+            numero : 3,
+            nombre : 4,
+            apprenant : [
+                personne1 = {
+                    nom : 'KHLf',
+                    prenom : 'dfgq'
+                },
+                personne2 = {
+                    nom : 'aezrg',
+                    prenom : 'fghs'
+                },
+                personne3 = {
+                    nom : 'SHGS',
+                    prenom : 'xezze'
+                },
+                personne4 = {
+                    nom : 'Loep',
+                    prenom : 'Aze'
+                },
+            ]
+        };
+        let table4 = {
+            numero : 4,
+            nombre : 5,
+            apprenant : [
+                personne1 = {
+                    nom : 'HJTd',
+                    prenom : 'dftys'
+                },
+                personne2 = {
+                    nom : 'ertq',
+                    prenom : 'stss'
+                },
+                personne3 = {
+                    nom : 'AZfsgs',
+                    prenom : 'dzagh'
+                },
+
+                personne4 = {
+                    nom : 'King',
+                    prenom : 'Moche'
+                },
+                personne5 = {
+                    nom : 'Pepouze',
+                    prenom : 'DFld'
+                }
+            ]
+        };
+        let tableau = [table1, table2, table3, table4];
+    for(let t of tableau){
+        console.log("La table n°" + t.numero + " a " + t.nombre + " apprenants. Leur nom et prénom sont :");
+        for (let u of t.apprenant) {
+console.log (u.nom + " " + u.prenom );};
+    };
+    </script>
+
+</body>
+</html>
