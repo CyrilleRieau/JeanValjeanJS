@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chien</title>
+</head>
+
+<body>
+    <script>
+        let chien = {
+            nom: 'rex',
+            race: 'caniche',
+            aboyer: function() {
+                alert('woof');
+            },
+            presentation: pres,
+            taille: 120
+        };
+        let personne = {
+            nom: 'Pepe',
+            prenom: 'Old',
+            presentation: pres,
+            taille: 118
+        };
+
+        function pres() {
+            for (let prop in this) {
+                console.log(prop + ':' + this[prop]);
+            }
+        };
+
+        chien.presentation();
+        personne.presentation();
+        //        pres(); Affiche les valeurs de window;
+    </script>
+</body>
+
+</html>

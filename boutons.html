@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bouton</title>
+</head>
+
+<body>
+    <button type='button' id='b1'>green</button>
+    <button type='button' id='b2'>purple</button>
+    <button type='button' id='b3'>blue</button>
+    <script>
+        let bou1 = document.querySelector('#b1');
+        let bou2 = document.querySelector('#b2');
+        let bou3 = document.querySelector('#b3');
+        let button = document.querySelector('button');
+
+        function changeColor() {
+            for (let prop in this) {
+                this.style.backgroundColor = this[prop];
+            }
+        };
+        b1.addEventListener('click', changeColor);
+
+        b2.addEventListener('click', changeColor);
+
+        b3.addEventListener('click', changeColor);
+    </script>
+</body>
+
+</html>
